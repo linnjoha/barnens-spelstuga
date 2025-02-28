@@ -1,0 +1,36 @@
+export const words = [
+  { word: "APA", level: 0, img_url: "" },
+  { word: "SOL", level: 0, img_url: "" },
+  { word: "BIL", level: 0, img_url: "" },
+  { word: "HUS", level: 0, img_url: "" },
+  { word: "KO", level: 0, img_url: "" },
+  { word: "TÅG", level: 0, img_url: "" },
+  { word: "BOK", level: 0, img_url: "" },
+  { word: "IS", level: 0, img_url: "" },
+  { word: "FÅR", level: 0, img_url: "" },
+  { word: "LAX", level: 0, img_url: "" },
+
+  // Level 1: 4-6 bokstäver
+  { word: "STOL", level: 1, img_url: "" },
+  { word: "BOLL", level: 1, img_url: "" },
+  { word: "GRIS", level: 1, img_url: "" },
+  { word: "BÅTAR", level: 1, img_url: "" },
+  { word: "FÅGEL", level: 1, img_url: "" },
+  { word: "VÄSKA", level: 1, img_url: "" },
+  { word: "HJUL", level: 1, img_url: "" },
+  { word: "KANIN", level: 1, img_url: "" },
+  { word: "BÄVER", level: 1, img_url: "" },
+  { word: "MOTOR", level: 1, img_url: "" },
+
+  // Level 2: 6+ bokstäver
+  { word: "ELEFANT", level: 2, img_url: "" },
+  { word: "GIRAFF", level: 2, img_url: "" },
+  { word: "KROKODIL", level: 2, img_url: "" },
+  { word: "SKORSTEN", level: 2, img_url: "" },
+  { word: "FLYGPLAN", level: 2, img_url: "" },
+  { word: "TOMATJUICE", level: 2, img_url: "" },
+  { word: "FOTBOLLSPLAN", level: 2, img_url: "" },
+  { word: "JORDGUBBAR", level: 2, img_url: "" },
+  { word: "KAKMONSTER", level: 2, img_url: "" },
+  { word: "BILMEKANIKER", level: 2, img_url: "" },
+];
