@@ -15,6 +15,7 @@ const Skriva = () => {
 
   const handleLevelDecision = (i) => {
     setLevel(i);
+
     const chosenLevelWords = words.filter((word) => word.level == i);
     setChosenWords(chosenLevelWords);
     startGame();
@@ -81,6 +82,7 @@ const Skriva = () => {
 
     const checkWord = () => {
       const isCorretct = userAnswer.join("") === randomWord.word;
+      console.log(randomWord);
       if (isCorretct) {
         alert("heja");
         startGame();
@@ -92,11 +94,15 @@ const Skriva = () => {
           <h2 className="text-3xl font-bold p-10">
             Flytta bokstäverna för att skriva ordet
           </h2>
+          <img
+            src={randomWord.img_url}
+            className={` h-48 w-48 object-contain`}
+          />
           <div className="flex gap-2 p-4">
             {shuffledLetters.map((letter, i) => (
               <div
                 key={i}
-                className="rounded-2xl bg-white w-12 h-16 text-black flex items-center justify-center shadow cursor-pointer"
+                className="rounded-2xl bg-white w-12 h-16 text-black flex items-center justify-center shadow cursor-grab"
                 draggable
                 onDragStart={(e) => handleDragStart(e, letter)}
               >
@@ -136,7 +142,7 @@ const Skriva = () => {
             </button>
             <button
               onClick={() => {
-                setIsOpen(!isOpen), setLevel(null);
+                setChosenWords(null), setLevel(null), setIsOpen(!isOpen);
               }}
               className="bg-white text-black px-10 py-4 rounded-full font-bold hover:text-gray-700 hover:border-1"
             >
