@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { words } from "../constants/words";
-import { redirect } from "react-router";
 
 const Skriva = () => {
   const [isOpen, setIsOpen] = useState(true);
