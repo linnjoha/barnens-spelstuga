@@ -68,13 +68,31 @@ const Rakna = () => {
               onChange={(e) => setUserAnswer(e.currentTarget.value)}
               type="text"
             />
+          </section>
+          <footer className="flex gap-4 mr-8 self-end">
             <button
               className="bg-amber-400 px-10 py-4 rounded-full font-bold hover:text-white hover:border-2 text-white"
               onClick={() => checkUserAnswer()}
             >
               Rätta
             </button>
-          </section>
+            <button
+              className="bg-amber-400 px-10 py-4 rounded-full font-bold hover:text-white hover:border-2 text-white"
+              onClick={
+                counting == "+"
+                  ? () => startAddition()
+                  : () => startSubstraction()
+              }
+            >
+              Nytt tal
+            </button>
+            <button
+              onClick={() => [setIsOpen(!isOpen), () => setCounting(null)]}
+              className="bg-white text-black px-10 py-4 rounded-full font-bold  hover:border-2 "
+            >
+              Byt Räknesätt
+            </button>
+          </footer>
         </section>
       </>
     );
